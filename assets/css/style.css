@@ -150,8 +150,10 @@ body {
 
 .container {
   padding-inline: 16px;
-  height: 400px; /* Adjust the height as per your requirements */
-  overflow: auto;
+}
+
+.has-scrollbar {
+  overflow-y: auto;
 }
 
 .material-symbols-rounded {
