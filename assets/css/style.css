@@ -124,7 +124,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   background-color: var(--white);
   color: var(--sonic-silver);
   font-size: 1.6rem;
@@ -149,7 +148,11 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container {
+  padding-inline: 16px;
+  height: 400px; /* Adjust the height as per your requirements */
+  overflow: auto;
+}
 
 .material-symbols-rounded {
   --fs: 1em;
