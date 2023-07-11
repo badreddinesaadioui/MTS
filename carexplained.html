@@ -5,216 +5,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
   <title>Comment bien entretenir son véhicule ?</title>
-  <meta name="title" content="MTS - Auto Maintenance et Réparation">
-  <meta name="description" content="Mécanique Tolerie Saadioui">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="icon" href="./assets/jk.png" type="image/png">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-    rel="stylesheet">
-
-  <!-- 
-    - material icon font
-  -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
-
   <style>
-    /* Custom CSS styles for the body text */
+    body {
+      color: white;
+      background-image: url("./background.jpg");
+      background-attachment: fixed;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: white;
+      font-weight: bold;
+    }
+
     h1 {
       font-size: 32px;
-      font-weight: bold;
-      font-family: 'Chakra Petch', sans-serif;
-      color: #333;
-      margin-bottom: 20px;
-      text-align: left;
     }
 
     h2 {
       font-size: 24px;
-      font-weight: bold;
-      font-family: 'Chakra Petch', sans-serif;
-      color: #555;
-      margin-bottom: 15px;
-      text-align: left;
     }
 
     h3 {
       font-size: 20px;
-      font-weight: bold;
-      font-family: 'Chakra Petch', sans-serif;
-      color: #666;
-      margin-bottom: 10px;
-      text-align: left;
     }
 
-    p {
-      font-size: 16px;
-      font-family: 'Mulish', sans-serif;
-      color: #777;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-
+    p,
     ul {
-      list-style-type: none;
-      margin-left: 20px;
-      color: #777;
-      margin-bottom: 10px;
-      text-align: left;
+      color: white;
     }
 
-    .section {
-      margin-bottom: 40px;
-    }
-
-    /* Custom CSS styles for bold words in text */
     strong {
       font-weight: bold;
-      color: #333;
-    }
-
-    .bullet-point {
-      list-style-type: none;
-      padding-left: 20px;
-    }
-
-    .bullet-point li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 10px;
-    }
-
-    .bullet-point li:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #000;
     }
   </style>
-
 </head>
 
 <body>
-
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header">
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="128" height="63" alt="autofix home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="index.html" class="navbar-link">Accueil</a>
-          </li>
-
-          <li>
-            <a href="#about-label" class="navbar-link">À propos</a>
-          </li>
-
-          <li>
-            <a href="CarExplained.html" class="navbar-link">auto-guide</a>
-          </li>
-
-          <li>
-            <a href="#service-label" class="navbar-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#work-label" class="navbar-link">Projets</a>
-          </li>
-
-          <li>
-            <a href="#FOOTER" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <a href="tel:0661147105" class="btn btn-primary">
-        <span class="span">Appelez nous</span>
-
-        <span class="material-symbols-rounded">arrow_forward</span>
-      </a>
-
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <span class="nav-toggle-icon icon-1"></span>
-        <span class="nav-toggle-icon icon-2"></span>
-        <span class="nav-toggle-icon icon-3"></span>
-      </button>
-
-    </div>
+    <!-- Header content here -->
   </header>
 
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
-
       <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/bg.jpg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle :dark">Guide</p>
-
-            <h1 class="h1 section-title">Comment bien entretenir son véhicule ?</h1>
-
-            <a href=#comment class="btn">
-              <span class="span">Decouvrir</span>
-
-              <span class="material-symbols-rounded">arrow_forward</span>
-            </a>
-
-          </div>
-
-        </div>
+        <!-- Hero section content here -->
       </section>
-
-      <!-- 
-        - #Batman
-      -->
 
       <div class="section" id="comment">
         <h2 class="section-title">Les visites techniques</h2>
-
         <h3 class="section-title">Le contrôle technique</h3>
         <p>Le contrôle technique périodique des véhicules légers en France est obligatoire depuis le 1er janvier 1992. Il est réglementé par le Code de la Route (articles R. 323-1 à R. 323-26) et un arrêté du 18 juin 1991, modifié par plusieurs arrêtés successifs.</p>
         <p>Les automobilistes doivent obligatoirement effectuer leur premier contrôle technique au cours des 6 mois précédant la 4ème année d'immatriculation de leur véhicule dans le cas d'une voiture neuve. Suite à ce premier contrôle, il est obligatoire d'en effectuer un autre tous les 2 ans. Si l'usager décide d'acheter ou de vendre un véhicule, il est nécessaire que le contrôle technique date de moins de 6 mois.</p>
@@ -243,9 +84,8 @@
 
       <div class="section">
         <h2 class="section-title">Les vérifications du conducteur pour entretenir son véhicule</h2>
-
         <h3 class="section-title">Les vérifications extérieures et intérieures</h3>
-        <ul class="bullet-point">
+        <ul>
           <li>L'état des feux : Il est indispensable de vérifier l'état des feux avant et arrière ainsi que celui des rétroviseurs avant de prendre la route. Un optique sale ou cassé peut être une source de danger pour l'automobiliste et pour les autres usagers de la route.</li>
           <li>L'état du pare-brise : Le conducteur doit vérifier qu'il n'y ait ni fissure ni impact sur le pare-brise car, en cas de choc, la facture risque de s'alourdir.</li>
           <li>Les essuie-glaces : L'usager doit vérifier que les balais de ses essuie-glaces ne laissent pas de traces sur son pare-brise, car cela pourrait être dangereux en cas de conduite sous la pluie !</li>
@@ -254,7 +94,7 @@
 
       <div class="section">
         <h2 class="section-title">Les vérifications moteur</h2>
-        <ul class="bullet-point">
+        <ul>
           <li>Le niveau d'huile : Il doit se situer entre les deux repères, mini et maxi (de préférence proche du repère maxi). L'huile moteur a pour but de lubrifier, nettoyer, inhiber la corrosion, améliorer l'étanchéité et contribuer à évacuer la chaleur de friction et de combustion de façon que les pièces du moteur restent fonctionnelles.</li>
           <li>Le niveau du liquide de frein : Comme pour le niveau d'huile, il doit être proche du repère maxi. Le rôle du liquide de frein est de transmettre jusqu’aux roues la pression exercée sur les leviers de freins. Le liquide de freinage est un produit synthétique qui a la caractéristique d’être incompressible et d'être très peu sensible aux variations de température.</li>
           <li>Le niveau du liquide de refroidissement : Idem que pour l'huile moteur et le liquide de frein. Le liquide de refroidissement présente une solution efficace à un problème récurrent en mécanique : la création indésirable de chaleur pouvant endommager le système.</li>
@@ -264,7 +104,7 @@
 
       <div class="section">
         <h2 class="section-title">Les pneumatiques</h2>
-        <ul class="bullet-point">
+        <ul>
           <li>Les indicateurs d'usure : Ces indicateurs sont situés dans les rainures des pneumatiques. Lorsque la gomme est usée et qu'elle atteint le niveau des indicateurs, c'est qu'il est temps pour l'usager de changer ses pneus. Si les pneus ne se sont pas usés de manière régulière, cela signifie qu'ils étaient mal gonflés ou qu'il y a un défaut de parallélisme sur le véhicule.</li>
           <li>L'état des flancs : L'automobiliste doit vérifier les flancs de ses pneus régulièrement, surtout s'ils ont subi un choc récemment...</li>
           <li>La pression : Cette vérification doit toujours se faire à froid. Des pneus sous-gonflés auront un impact négatif sur la consommation de carburant et auront plus de chances d'éclater.</li>
@@ -273,19 +113,16 @@
 
       <div class="section">
         <h2 class="section-title">Les voyants du tableau de bord</h2>
-
         <div class="image">
           <img src="./assets/voyant-filtre.jpeg" alt="Voyant d'huile moteur">
         </div>
         <p>Lorsque ce voyant s'allume, l'usager de la route doit s'arrêter immédiatement car il risque une casse moteur. Le voyant lui indique que la pression d'huile de son moteur est insuffisante.</p>
-
-        <!-- Ajoutez ici les autres images et descriptions des voyants du tableau de bord -->
       </div>
 
       <div class="section">
         <h2 class="section-title">Le nettoyage du véhicule</h2>
         <p>Enfin, il ne faut pas oublier d'entretenir également l'extérieur du véhicule, en nettoyant et en lustrant régulièrement son automobile.</p>
-    </div>
+      </div>
 
 
   <!-- 
