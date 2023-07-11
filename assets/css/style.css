@@ -124,6 +124,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--white);
   color: var(--sonic-silver);
   font-size: 1.6rem;
