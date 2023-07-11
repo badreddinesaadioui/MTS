@@ -81,7 +81,7 @@
     }
 
     ul {
-      list-style-type: disc;
+      list-style-type: none;
       margin-left: 20px;
       color: #777;
       margin-bottom: 10px;
@@ -96,6 +96,28 @@
     strong {
       font-weight: bold;
       color: #333;
+    }
+
+    .bullet-point {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    .bullet-point li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .bullet-point li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #000;
     }
   </style>
 
@@ -159,10 +181,6 @@
     </div>
   </header>
 
-
-
-
-
   <main>
     <article>
 
@@ -177,8 +195,7 @@
 
             <p class="section-subtitle :dark">Guide</p>
 
-              <h1 class="h1 section-title">Comment bien entretenir son véhicule ?</h1>
-
+            <h1 class="h1 section-title">Comment bien entretenir son véhicule ?</h1>
 
             <a href=#comment class="btn">
               <span class="span">Decouvrir</span>
@@ -190,80 +207,82 @@
 
         </div>
       </section>
-  
-    <h1>Comment bien entretenir son véhicule ?</h1>
 
-    <div class="section" id="comment">
+      <!-- 
+        - #Batman
+      -->
+
+      <div class="section" id="comment">
         <h2 class="section-title">Les visites techniques</h2>
-        
+
         <h3 class="section-title">Le contrôle technique</h3>
         <p>Le contrôle technique périodique des véhicules légers en France est obligatoire depuis le 1er janvier 1992. Il est réglementé par le Code de la Route (articles R. 323-1 à R. 323-26) et un arrêté du 18 juin 1991, modifié par plusieurs arrêtés successifs.</p>
-        <p>Les automobilistes doivent obligatoirement effectuer leur premier contrôle technique au cours des 6 mois précédent la 4ème année d'immatriculation de leur véhicule dans le cas d'une voiture neuve. Suite à ce premier contrôle, il est obligatoire d'en effectuer un autre tous les 2 ans. Si l'usager décide d'acheter ou de vendre un véhicule, il est nécessaire que le contrôle technique date de moins de 6 mois.</p>
+        <p>Les automobilistes doivent obligatoirement effectuer leur premier contrôle technique au cours des 6 mois précédant la 4ème année d'immatriculation de leur véhicule dans le cas d'une voiture neuve. Suite à ce premier contrôle, il est obligatoire d'en effectuer un autre tous les 2 ans. Si l'usager décide d'acheter ou de vendre un véhicule, il est nécessaire que le contrôle technique date de moins de 6 mois.</p>
         <p>En 2016, près de 24 795 000 véhicules ont été présentés au contrôle technique en France. La moyenne d'âge des véhicules était de 11,68 ans et seulement 13,53% sont passés sans défaut, 17,64% ont nécessité une contre-visite.</p>
         <p>Ce contrôle s'effectue sur 133 points de contrôle parmi un ensemble de fonctions comme :</p>
         <ul>
-            <li>Identification</li>
-            <li>Fonctionnement des freins</li>
-            <li>Direction</li>
-            <li>Visibilité</li>
-            <li>Éclairage</li>
-            <li>Liaison au sol</li>
-            <li>Carrosserie</li>
-            <li>Équipements</li>
-            <li>Mécanique</li>
-            <li>Pollution</li>
+          <li>Identification</li>
+          <li>Fonctionnement des freins</li>
+          <li>Direction</li>
+          <li>Visibilité</li>
+          <li>Éclairage</li>
+          <li>Liaison au sol</li>
+          <li>Carrosserie</li>
+          <li>Équipements</li>
+          <li>Mécanique</li>
+          <li>Pollution</li>
         </ul>
         <p>Si une réparation obligatoire est décelée au cours de ce contrôle, l'automobiliste aura alors 2 mois pour l'effectuer et présenter son véhicule en contre-visite.</p>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2 class="section-title">La révision du constructeur</h2>
         <p>Ces révisions sont faites directement au sein de l'un des centres du constructeur du véhicule. Cela dépend des modèles et de la marque, mais généralement cette révision a lieu tous les 20 000 km. Le véhicule subit alors un contrôle et une révision plus approfondie : vidange, changement des différents filtres et autre.</p>
         <p>Le prix d'une vidange dépend beaucoup de la marque du véhicule, il est possible d'avoir une estimation sur <a href="https://www.carbudget.fr/">https://www.carbudget.fr/</a>.</p>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2 class="section-title">Les vérifications du conducteur pour entretenir son véhicule</h2>
 
         <h3 class="section-title">Les vérifications extérieures et intérieures</h3>
         <ul class="bullet-point">
-            <li>L'état des feux : Il est indispensable de vérifier l'état des feux avant et arrière ainsi que celui des rétroviseurs avant de prendre la route. Un optique sale ou cassé peut être une source de danger pour l'automobiliste et pour les autres usagers de la route.</li>
-            <li>L'état du pare-brise : Le conducteur doit vérifier qu'il n'y ait ni fissure ni impact sur le pare-brise car, en cas de choc, la facture risque de s'alourdir.</li>
-            <li>Les essuie-glaces : L'usager doit vérifier que les balais de ses essuie-glaces ne laissent pas de traces sur son pare-brise, car cela pourrait être dangereux en cas de conduite sous la pluie !</li>
+          <li>L'état des feux : Il est indispensable de vérifier l'état des feux avant et arrière ainsi que celui des rétroviseurs avant de prendre la route. Un optique sale ou cassé peut être une source de danger pour l'automobiliste et pour les autres usagers de la route.</li>
+          <li>L'état du pare-brise : Le conducteur doit vérifier qu'il n'y ait ni fissure ni impact sur le pare-brise car, en cas de choc, la facture risque de s'alourdir.</li>
+          <li>Les essuie-glaces : L'usager doit vérifier que les balais de ses essuie-glaces ne laissent pas de traces sur son pare-brise, car cela pourrait être dangereux en cas de conduite sous la pluie !</li>
         </ul>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2 class="section-title">Les vérifications moteur</h2>
         <ul class="bullet-point">
-            <li>Le niveau d'huile : Il doit se situer entre les deux repères, mini et maxi (de préférence proche du repère maxi). L'huile moteur a pour but de lubrifier, nettoyer, inhiber la corrosion, améliorer l'étanchéité et contribuer à évacuer la chaleur de friction et de combustion de façon que les pièces du moteur restent fonctionnelles.</li>
-            <li>Le niveau du liquide de frein : Comme pour le niveau d'huile, il doit être proche du repère maxi. Le rôle du liquide de frein est de transmettre jusqu’aux roues la pression exercée sur les leviers de freins. Le liquide de freinage est un produit synthétique qui a la caractéristique d’être incompressible et d'être très peu sensible aux variations de température.</li>
-            <li>Le niveau du liquide de refroidissement : Idem que pour l'huile moteur et le liquide de frein. Le liquide de refroidissement présente une solution efficace à un problème récurrent en mécanique : la création indésirable de chaleur pouvant endommager le système.</li>
-            <li>Le niveau du liquide lave-glace : L'automobiliste doit s'assurer de le remplir régulièrement à l'aide d'un liquide aux propriétés antigel.</li>
+          <li>Le niveau d'huile : Il doit se situer entre les deux repères, mini et maxi (de préférence proche du repère maxi). L'huile moteur a pour but de lubrifier, nettoyer, inhiber la corrosion, améliorer l'étanchéité et contribuer à évacuer la chaleur de friction et de combustion de façon que les pièces du moteur restent fonctionnelles.</li>
+          <li>Le niveau du liquide de frein : Comme pour le niveau d'huile, il doit être proche du repère maxi. Le rôle du liquide de frein est de transmettre jusqu’aux roues la pression exercée sur les leviers de freins. Le liquide de freinage est un produit synthétique qui a la caractéristique d’être incompressible et d'être très peu sensible aux variations de température.</li>
+          <li>Le niveau du liquide de refroidissement : Idem que pour l'huile moteur et le liquide de frein. Le liquide de refroidissement présente une solution efficace à un problème récurrent en mécanique : la création indésirable de chaleur pouvant endommager le système.</li>
+          <li>Le niveau du liquide lave-glace : L'automobiliste doit s'assurer de le remplir régulièrement à l'aide d'un liquide aux propriétés antigel.</li>
         </ul>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2 class="section-title">Les pneumatiques</h2>
         <ul class="bullet-point">
-            <li>Les indicateurs d'usure : Ces indicateurs sont situés dans les rainures des pneumatiques. Lorsque la gomme est usée et qu'elle atteint le niveau des indicateurs, c'est qu'il est temps pour l'usager de changer ses pneus. Si les pneus ne se sont pas usés de manière régulière, cela signifie qu'ils étaient mal gonflés ou qu'il y a un défaut de parallélisme sur le véhicule.</li>
-            <li>L'état des flancs : L'automobiliste doit vérifier les flancs de ses pneus régulièrement, surtout s'ils ont subi un choc récemment...</li>
-            <li>La pression : Cette vérification doit toujours se faire à froid. Des pneus sous-gonflés auront un impact négatif sur la consommation de carburant et auront plus de chances d'éclater.</li>
+          <li>Les indicateurs d'usure : Ces indicateurs sont situés dans les rainures des pneumatiques. Lorsque la gomme est usée et qu'elle atteint le niveau des indicateurs, c'est qu'il est temps pour l'usager de changer ses pneus. Si les pneus ne se sont pas usés de manière régulière, cela signifie qu'ils étaient mal gonflés ou qu'il y a un défaut de parallélisme sur le véhicule.</li>
+          <li>L'état des flancs : L'automobiliste doit vérifier les flancs de ses pneus régulièrement, surtout s'ils ont subi un choc récemment...</li>
+          <li>La pression : Cette vérification doit toujours se faire à froid. Des pneus sous-gonflés auront un impact négatif sur la consommation de carburant et auront plus de chances d'éclater.</li>
         </ul>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2 class="section-title">Les voyants du tableau de bord</h2>
-        
+
         <div class="image">
-            <img src="./assets/voyant-filtre.jpeg" alt="Voyant d'huile moteur">
+          <img src="./assets/voyant-filtre.jpeg" alt="Voyant d'huile moteur">
         </div>
         <p>Lorsque ce voyant s'allume, l'usager de la route doit s'arrêter immédiatement car il risque une casse moteur. Le voyant lui indique que la pression d'huile de son moteur est insuffisante.</p>
-        
-        <!-- Ajoutez ici les autres images et descriptions des voyants du tableau de bord -->
-    </div>
 
-    <div class="section">
+        <!-- Ajoutez ici les autres images et descriptions des voyants du tableau de bord -->
+      </div>
+
+      <div class="section">
         <h2 class="section-title">Le nettoyage du véhicule</h2>
         <p>Enfin, il ne faut pas oublier d'entretenir également l'extérieur du véhicule, en nettoyant et en lustrant régulièrement son automobile.</p>
     </div>
